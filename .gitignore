@@ -5,7 +5,7 @@
 # App
 /.dev
 /bin
-/vendor
+/vendor/**/.git
 /*.syso
 /*.exe
 /versioninfo.json
