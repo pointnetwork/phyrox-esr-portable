@@ -24,8 +24,6 @@ jobs:
         run: |
           echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
           echo "$(go env GOPATH)/bin/windows_386" >> $GITHUB_PATH
-
-          echo "PORTAPPS_VERSION=$(cat go.mod | grep github.com/portapps/portapps | awk '{print $NF}')" >> $GITHUB_ENV
           echo "PORTAPPS_DIR=./.portapps" >> $GITHUB_ENV
 
           if [[ $GITHUB_REF == refs/tags/* ]]; then
@@ -37,7 +35,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: pointnetwork/portapps
-          ref: ${{ env.PORTAPPS_VERSION }}
+          ref: master
           path: ${{ env.PORTAPPS_DIR }}
       -
         name: Cache Go modules
