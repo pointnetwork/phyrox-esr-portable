@@ -1,5 +1,10 @@
 # Changelog
 
+## 97.7.1-58 (2022/03/14)
+
+* Firefox ESR 91.7.1
+* Portapps 3.4.0
+
 ## 91.5.1-57 (2022/01/27)
 
 * Firefox ESR 91.5.1
@@ -89,7 +94,7 @@
 
 ## 68.8.0-37 (2020/05/29)
 
-* Fix addons startup (portapps/phyrox-portable#3) 
+* Fix addons startup (portapps/phyrox-portable#3)
 * Portapps 2.4.4
 
 ## 68.8.0-36 (2020/05/10)
