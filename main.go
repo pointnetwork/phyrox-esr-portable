@@ -1,6 +1,6 @@
-//go:generate go install -mod=vendor -v github.com/kevinburke/go-bindata/go-bindata
+//go:generate go install -v github.com/kevinburke/go-bindata/go-bindata
 //go:generate go-bindata -prefix res/ -pkg assets -o assets/assets.go res/FirefoxESR.lnk
-//go:generate go install -mod=vendor -v github.com/josephspurrier/goversioninfo/cmd/goversioninfo
+//go:generate go install -v github.com/josephspurrier/goversioninfo/cmd/goversioninfo
 //go:generate goversioninfo -icon=res/papp.ico -manifest=res/papp.manifest
 package main
 
